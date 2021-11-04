@@ -14,8 +14,42 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 1.6rem;
+	background-image: url('../images/pattern-background-mobile.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.card {
+	width: 450px;
+	margin: 50px;
+	background-color: #fff;
+	border-radius: 30px;
+
+	&__hero-img {
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+	}
+
+	&__title {
+		font-weight: 900;
+		color: $darkBlue;
+		text-align: center;
+		font-size: 2.5rem;
+		padding: 30px;
+	}
+
+	&__paragraph {
+		margin: 20px;
+		margin-top: 0;
+		text-align: center;
+		color: $desaturatedBlue;
+	}
 }
 
 @import './large';

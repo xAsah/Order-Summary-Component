@@ -13,7 +13,50 @@ html {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Red Hat Display', sans-serif;
   font-size: 1.6rem;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 450px;
+  margin: 50px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.card__hero-img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.card__title {
+  font-weight: 900;
+  color: #1f2f56;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 30px;
+}
+
+.card__paragraph {
+  margin: 20px;
+  margin-top: 0;
+  text-align: center;
+  color: #7280a7;
 }
 /*# sourceMappingURL=style.css.map */
